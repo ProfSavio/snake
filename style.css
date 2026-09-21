@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E3F2FD;
+}
+
+.tela {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #293447;
+}
+
+.info-jogo {
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabuleiro {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837;
+}
+
+.comida {
+    background-color: #ff003d;
+}
+
+.cobra {
+    background-color: #60cbff;
+}
+
+.controles {
+    display: none;
+    justify-content: space-between;
+}
+
+i {
+    padding: 25px 0;
+    color: #b8c6dc;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-radius: 1px solid #171b26;
+}
+
+@media screen and (max-width: 800px) {
+    .tela {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .info-jogo {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controles {
+        display: flex;
+    }
+
+    i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
