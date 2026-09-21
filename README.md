@@ -8,6 +8,12 @@ A ideia é observar como o programa reage a diferentes acontecimentos: o jogador
 
 ---
 
+<p align="center">
+  <img src="snake.gif" width="600">
+</p>
+
+---
+
 ## 🎮 Sobre o jogo
 
 O jogador controla uma cobra em um tabuleiro de 30 × 30 posições.
